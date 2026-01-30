@@ -1,4 +1,4 @@
-import type { PluginManifest } from 'tailchat-shared';
+﻿import type { PluginManifest } from 'tailchat-shared';
 import _compact from 'lodash/compact';
 
 const isOffical = [
@@ -68,6 +68,17 @@ export const builtinPlugins: PluginManifest[] = _compact([
     author: 'moonrailgun',
     description: 'Add markdown panel support',
     'description.zh-CN': '增加 Markdown 面板支持',
+    requireRestart: true,
+  },
+  {
+    label: 'Markdown Enhancer',
+    'label.zh-CN': 'Markdown 增强',
+    name: 'com.dajun666.markdown',
+    url: '/plugins/com.dajun666.markdown/index.js',
+    version: '0.0.0',
+    author: 'dajun666',
+    description: 'Enhanced markdown rendering and paste-image workflow',
+    'description.zh-CN': '增强 Markdown 渲染与粘贴图片流程',
     requireRestart: true,
   },
   {
